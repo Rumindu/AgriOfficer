@@ -1,0 +1,57 @@
+.top-nav {
+    overflow: hidden;
+    background-color: #c2e39d;
+}
+
+.logo-wrapper{
+    float: left;
+    text-align: center;
+}
+
+.logo{
+    height: 68px;
+    padding: 0 15px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    width: 100%;
+    height: 10vh;
+}
+
+.right-corner{
+    width: 25%;
+    float: right;
+}
+
+.btn-notification{
+    width: 20%;
+    float: left;
+}
+
+.profile{
+    width: 80%;
+    float: right;
+}
+
+.name-container{
+    width: 70%;
+    float: left;
+    padding: 10px 0;
+}
+
+.profile-pic{
+    width: 30%;
+    float: right;
+}
+
+.avatar{
+    height: 50px;
+    padding: 0.2em;
+    margin-top: 5px;
+}
+

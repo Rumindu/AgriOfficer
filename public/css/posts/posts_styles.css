@@ -1,0 +1,102 @@
+body{
+    background-color: #f7f6f2;
+    margin: 0;
+    padding: 0
+}
+
+.post-container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    width: 500px;
+    border: none;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.post-container textarea{
+    margin-top: 5px;
+    width: 94%;
+    border: none;
+    background-color: white;
+    font-size: 15px;
+    border: 1px solid #d3d3d3;
+    border-radius: 8px;
+    padding: 8px 10px;
+}
+
+.post-container textarea:focus{
+    outline: none !important; /* otherwise it will show default boarder color black */
+    border:1px solid #7bd664;
+}
+
+::placeholder{
+    font-family: Poppins-Regular;
+}
+
+
+/* After publishing the view (index)*/
+.post-index-container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    width: 800px;
+    border-radius: 8px;
+
+}
+
+.post-index-container .post-header{
+    padding:10px;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+ .post-index-container .post-header .post-user-name{ 
+    /* making space after . is compulsory */
+    padding-right:15px;
+    font-weight: 600;
+    color: black;
+}
+
+.post-index-container .post-body{
+    padding: 10px;
+    border-bottom:1px solid #d3d3d3;
+    font-size: 15px;
+}
+
+.post-index-container .post-title{
+    font-size: 18px;
+    font-weight: 600;
+    color : rgb(19,18,18)
+
+}
+
+.post-index-container .post-footer{
+    padding:10px;
+    display: flex;
+    flex-direction: row;
+    font-size: 13px; 
+    align-items: center;
+    justify-content: center; 
+}
+
+.post-index-container .post-footer .Post-likes{
+    padding-right:20px;
+    font-weight: 600;
+    color: green;
+
+}
+
+.post-index-container .post-footer .post-dislikes{
+    padding-right:20px;
+    font-weight: 600;
+    color: #f51c18;
+}
+
+

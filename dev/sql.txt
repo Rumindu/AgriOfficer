@@ -1,0 +1,34 @@
+CREATE TABLE Users(
+    id INT AUTO_INCREMENT,
+    name VARCHAR(255),
+    email VARCHAR(255),
+    password VARCHAR(255),
+    create_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY(id)
+);
+
+CREATE TABLE Posts(
+    id INT AUTO_INCREMENT,
+    user_id INT,
+    title VARCHAR(255),
+    body TEXT,
+    create_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY(id),
+    FOREIGN KEY(user_id) REFERENCES Users(id) ON DELETE CASCADE
+);
+
+CREATE VIEW v_posts AS //table only create on run time
+    SELECT 
+    posts.id as post_id,
+    users.id as user_id,
+    users.name as user_name,
+    posts.title as title,
+    posts.body as body,
+    posts.create_at as post_created_at,
+    users.create_at as user_created_at
+    From posts INNER JOIN users
+    ON posts.user_id=users.id
+    ORDER BY Posts.create_at;
+
+
+

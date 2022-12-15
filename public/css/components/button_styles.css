@@ -1,0 +1,70 @@
+/* .form-btn{
+    background-color: rgb(59,110,36);
+    color: aliceblue;
+    padding: 16px 20px;
+    margin: 8px 0px;
+    border: none;
+    cursor: pointer;
+    width:100%;
+    transition: .2s all;
+}
+ .form-btn:hover{
+    background-color: rgb(34,75,15);
+    border-radius: 5px;
+ } */
+
+ .post-btn, .login-btn, .register-btn{
+    background-color: #3b6e24;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 8px 0px;
+    border: 1px solid #3b6e24;
+    border-radius: 8px;
+    cursor: pointer;
+    width: max-content;
+    transition: .2s all;
+    text-align: center;
+    font-family: Poppins-Regular;
+}
+ .post-btn:hover, .login-btn:hover, .register-btn:hover{
+    background-color: #3b6e24;
+ }
+
+ .cancel-btn{
+   color: #f51c18;
+   padding: 10px 20px;
+   margin: 8px 0px;
+   border: 1px solid #f51c18;
+   border-radius: 8px;
+   cursor: pointer;
+   width: max-content;
+   transition: .2s all;
+   text-align: center;
+}
+.cancel-btn:hover{
+   background-color: #f51c18;
+   color: #ffffff;
+}
+
+ .btn {
+   width: 200px;
+   height: 50px;
+   background-color: rgb(128, 237, 144);
+   color: rgb(14, 13, 13);
+   border-radius: 5%;
+   text-align: center;
+   font-size: 1rem;
+   border: 3px solid #73AD21;
+   padding: 10px;
+   margin: 10px 10px;
+
+   
+ }
+
+ .btn-wrapper{
+   text-align: center;
+}
+
+button{
+   background-color: #ffffff;
+}
